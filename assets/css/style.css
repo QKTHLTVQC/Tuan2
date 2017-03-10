@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+@font-face {
+    font-family: 'RobotoBlack';
+    src: url('/fonts/Roboto-Black.ttf');
+}
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('/fonts/Roboto-Regular.ttf');
+}
 body {
 	margin:0;
 	padding:0;
@@ -9,7 +16,7 @@ body, select, input {
 	font-size:16px;
 	line-height:24px;
 	font-weight:300;
-  	font-family: 'Roboto', sans-serif;
+  	font-family: 'RobotoRegular', sans-serif;
 }
 img {
 	border:none;
@@ -142,7 +149,7 @@ p:last-child{
 .bannercon{
 	float:left;
 	width:100%;
-	background-image:url(../images/banner.jpg);
+	background-image:url(/assets/images/banner.jpg);
 	background-position:center top;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -288,7 +295,7 @@ p:last-child{
 }
 /********** FEATURES AREA *************/
 .features_section{
-	background-image:url(../images/feature_bg.jpg)
+	background-image:url(/assets/images/feature_bg.jpg)
 }
 .featuresbox p{
 	margin-bottom:75px;
@@ -643,7 +650,7 @@ p:last-child{
 	background:url(../images/arrow_left.png) no-repeat left center;
 }
 .testimonial_slider .carousel-control.right{
-	background:url(../images/arrow_right.png) no-repeat right center;
+	background: url(../images/arrow_right.png) no-repeat right center;
 	right:35%;
 	top:118px;
 }
@@ -723,18 +730,44 @@ p:last-child{
 .menu-box-inner:hover .textbox h5{
 	color: #fe8900;
 }
-
-/*chinh sua*/
-.cv_para {
-	margin: 8px;
+.bold {
+	color:#0D734F;
 }
-
-.cv_vien {
-	width: 3.333333%;
-	background-color: #337AB7;
+.page_view a {
+	color:#0D734F;
 }
+.menu-sub-link-title {
+	width: calc(100% - 50px);
+	white-space: nowrap;
+	margin-top: 6px;
+	font-size: 13px;
+	color: #0D734F;
+	float: right;
+	height: 17px;
+}
+.menu-box-inner a:hover, .menu-box-inner a:focus {
+	color: #fe8900 !important
+}
+a:hover, a:focus {
+	color: #fe8900 !important
+}
+.contentbox a{
+	color:#0D734F;
+}
+.register_btn {
+	line-height: 44px;
+    width: 112px;
 
-.cv_mau {
-	font-size: 1px;
-	background-color: #337AB7;
+}
+.topbox ul li.top-btn a{
+    margin-left: 2px;
+}
+.pull-left {
+    margin-left: -10px;
+}
+.CO {
+	margin-left: 30px;
+}
+.avata {
+	margin-left: 600px;
 }
